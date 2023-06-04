@@ -3,14 +3,16 @@
 <PropertyList>
 	<default>
 		<menu n="10">
+		<label>DA50 RG</label>
+		<enabled type="bool">true</enabled>
 			<item>
 				<label>Autostart</label>
 				<binding>
 					<command>nasal</command>
-					<script>DA50.autostart();</script>
+					<script>da50.autostart();</script>
 				</binding>
 			</item>
-			<label>DA50 RG</label>
+			
 			<item>
 				<label>Select Livery</label>
 				<binding>

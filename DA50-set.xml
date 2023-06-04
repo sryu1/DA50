@@ -1,34 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-  <sim>
-    <description>Diamond DA50 RG</description>
-    <long-description>
-    The Diamond DA50 is a single-engine aircraft designed and manufactured by Diamond Aircraft Industries.
-    </long-description>
-    <author>sryu1</author>
-    <status>alpha</status>
-    <minimum-fg-version>2020.3</minimum-fg-version>
-    <rating>
-      <FDM type="int">0</FDM>
-      <systems type="int">0</systems>
-      <cockpit type="int">0</cockpit>
-      <model type="int">0</model>
-    </rating>
-    <tags>
-      <tag>Diamond</tag>
-      <tag>DA50</tag>
-    </tags>
-    <urls>
-      <code-repository>https://github.com/sryu1/DA50</code-repository>
-    </urls>
-    <flight-model>jsb</flight-model>
-    <aero>DA50</aero>
-    <model>
-      <path>Models/DA50.ac</path>
-    </model>
-    <sound>
+	<sim>
+		<description>Diamond DA50 RG</description>
+		<long-description>
+			The Diamond DA50 is a single-engine aircraft designed and manufactured by Diamond
+			Aircraft
+			Industries.
+		</long-description>
+		<author>sryu1</author>
+		<status>alpha</status>
+		<minimum-fg-version>2020.3</minimum-fg-version>
+		<rating>
+			<FDM type="int">1</FDM>
+			<systems type="int">0</systems>
+			<cockpit type="int">0</cockpit>
+			<model type="int">1</model>
+		</rating>
+		<tags>
+			<tag>Diamond</tag>
+			<tag>DA50</tag>
+		</tags>
+		<urls>
+			<code-repository>https://github.com/sryu1/DA50</code-repository>
+		</urls>
+		<flight-model>jsb</flight-model>
+		<aero>DA50</aero>
+		<model>
+			<path>Models/DA50.ac</path>
+		</model>
+		<sound>
 			<path>Sounds/DA50-sound.xml</path>
 		</sound>
-    <menubar include="Dialogs/DA50-menu.xml"/>
-  </sim>
+		<menubar include="Dialogs/DA50-menu.xml" />
+
+	</sim>
+	<nasal>
+		<da50>
+			<file>Nasal/DA50.nas</file>
+		</da50>
+	</nasal>
 </PropertyList>
